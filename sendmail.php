@@ -31,16 +31,6 @@ if (trim(!empty($_POST['username']))) {
 if (trim(!empty($_POST['userphone']))) {
 	$body .= '<p><stong>Телефон:</stong>' . $_POST['userphone'] . '</p>';
 }
-if (trim(!empty($_POST['usermail']))) {
-	$body .= '<p><stong>E-Mail:</stong>' . $_POST['usermail'] . '</p>';
-}
-if (trim(!empty($_POST['userfile']))) {
-	$body .= '<p><stong>Эскиз:</stong>' . $_POST['userfile'] . '</p>';
-}
-if (trim(!empty($_POST['message']))) {
-	$body .= '<p><stong>Сообщение:</stong>' . $_POST['message'] . '</p>';
-}
-
 $mail->Body = $body;
 
 // Отправка
